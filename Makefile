@@ -4,7 +4,6 @@ export $(shell sed 's/=.*//' .env)
 # Define variables
 PROJECT_NAME=$(CONTAINER_NAME)
 DOCKER_COMPOSE=docker compose
-CONTAINER_NAME=$(CONTAINER_NAME)
 
 # Default target: Show help
 .PHONY: help
