@@ -1,0 +1,11 @@
+services:
+  gateway:
+    image: nginx:alpine
+    container_name: ${CONTAINER_NAME}
+    ports:
+      - "${HOST_PORT}:80"
+    volumes:
+      - ./docker/nginx:/etc/nginx/conf.d
+    restart: always
+
+
